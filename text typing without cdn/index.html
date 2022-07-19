@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .intro{
+            display: flex;
+            background-color: cadetblue;
+            height: 100vh;
+            
+        }
+
+        .typing{
+            margin-left: 10px;
+            position: relative;
+        }
+
+        .typing::after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            right: -8px;
+            height: 7%;
+            border-right: 2px solid white;
+            animation: blink 0.5s infinite ease;
+        }
+
+        @keyframes blink{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="intro">
+                <h1>Hii I'm</h1>
+            <h1 class="typing"></h1>
+        </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
